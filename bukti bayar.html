@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Partner Outdoor Pembayaran</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            color: black;
+        }
+        .logo-text {
+            font-weight: 900;
+            letter-spacing: 0.05em;
+            font-size: 1.5rem;
+            line-height: 1.2;
+            white-space: nowrap;
+        }
+        .nav-text {
+            font-weight: 700;
+            font-size: 1rem;
+            letter-spacing: 0.1em;
+        }
+        .qris-qr {
+            width: 180px;
+            height: 180px;
+            image-rendering: pixelated;
+        }
+        .payment-card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .payment-card:hover {
+            transform: scale(1.05);
+        }
+        .btn-confirm {
+            background-color: #6b7280; 
+            color: white;
+            font-weight: 600;
+            font-size: 0.85rem;
+            padding: 0.5rem 1.5rem;
+            border-radius: 9999px;
+            text-align: center;
+            cursor: pointer;
+            user-select: none;
+            transition: background-color 0.3s ease;
+        }
+        .btn-confirm:hover, .btn-confirm:focus {
+            background-color: #4b5563; 
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="flex items-center border-b border-gray-300 p-4 max-w-screen-lg mx-auto">
+        <div class="flex items-baseline">
+            <span class="logo-text">PARTNER OUTDOOR</span>
+        </div>
+        <nav class="ml-auto">
+            <span class="nav-text">PEMBAYARAN</span>
+        </nav>
+    </header>
+
+    <!-- Main content area -->
+    <main class="max-w-screen-lg mx-auto mt-12 px-6 flex flex-col md:flex-row items-center md:items-start gap-20">
+
+        <!-- QRIS QR code and label -->
+        <div class="flex flex-col items-center">
+            <img
+                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/808c2f28-52b2-4bba-b67f-98232134c46d.png"
+                alt="Square black and white QR code for QRIS payment, pixelated style"
+                class="qris-qr"
+                onerror="this.onerror=null;this.src='https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2a52a32f-2866-4dc9-9c0c-08dfe7b64e07.png'"
+            />
+            <span class="mt-4 text-2xl font-extrabold">QRIS</span>
+        </div>
+
+        <!-- Payment methods list -->
+        <div class="grid grid-cols-2 gap-x-10 gap-y-10 max-w-md">
+            <div class="payment-card">
+                <h2 class="font-extrabold text-lg">GOPAY</h2>
+                <p class="font-semibold mt-2 text-md">08123456789</p>
+            </div>
+            <div class="payment-card">
+                <h2 class="font-extrabold text-lg">SHOPEEPAY</h2>
+                <p class="font-semibold mt-2 text-md">08123456789</p>
+            </div>
+            <div class="payment-card">
+                <h2 class="font-extrabold text-lg">BCA</h2>
+                <p class="font-semibold mt-2 text-md">87654321</p>
+            </div>
+            <div class="payment-card">
+                <h2 class="font-extrabold text-lg">BNI</h2>
+                <p class="font-semibold mt-2 text-md">12345678</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Confirm button -->
+    <footer class="max-w-screen-lg mx-auto mt-20 flex justify-center">
+        <button class="btn-confirm" aria-label="Konfirmasi bukti transfer ke WhatsApp"
+  onclick="window.location.href='https://wa.me/6285726043569'">
+  KONFIRMASI PEMBAYARAN ANDA<br />
+</button>
+<button class="btn-confirm" onclick="window.location.href='partner-outdoor.html'">
+        KEMBALI KE BERANDA
+    </button>
+
+    </footer>
+</body>
+</html>
