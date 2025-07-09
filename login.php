@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             // Cek password dengan password_verify (karena di-hash saat signup)
             if (password_verify($password, $row['password'])) {
                 // Login berhasil
-                header("Location: beranda.html");
+                header("Location: index.html");
                 exit;
             } else {
                 echo "<center><h1>Password salah. <a href='login.html'>Coba lagi</a></h1></center>";
